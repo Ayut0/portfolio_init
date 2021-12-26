@@ -1,0 +1,53 @@
+//Font-family
+.ff-p{
+    font-family: 'Playfair Display', serif;
+}
+
+.h2{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+// Font Size
+.fs-intro{
+    font-size: 68px;
+}
+
+.fs-h2{
+    font-size: 60px;
+}
+
+.fs-mobile-h2{
+    font-size: 48px;
+}
+
+.fs-mobile-intro{
+    font-size: 32px;
+}
+
+.fs-sm{
+    font-size: 24px;
+}
+
+.fs-p{
+    font-size: 20px;
+}
+
+.fs-mobile-p{
+    font-size: 12px;
+}
+
+// make contents centered
+.content-width{
+    width: 90%;
+    margin: 0 auto;
+    max-width: $contentMaxWidth;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: $cBgGray;
+}
