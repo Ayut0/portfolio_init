@@ -13,31 +13,52 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="header__container">
-                <div class="header__left">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="">
-                    </div>
-                    <div class="name">
-                        <span>Yuto</span>
+    <div id="global-container">
+        <div id="container">
+            <div class="mobile-menu__cover"></div>
+            <header>
+                <div class="header">
+                    <div class="header__container">
+                        <div class="header__left">
+                            <div class="logo">
+                                <img src="images/logo.png" alt="">
+                            </div>
+                            <div class="name">
+                                <span>Yuto</span>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <nav class="header__nav">
+                                <ul class="header__ul">
+                                    <li class="header__li">About me</li>
+                                    <li class="header__li">Projects</li>
+                                    <li class="header__li">Contacts</li>
+                                </ul>
+                            </nav>
+                            <div class="header__socialLogo">
+                                <!-- FontAwesomeは後で -->
+                            </div>
+                            <button class="mobile-menu__btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="header__right">
-                    <div class="nav">
-                        <nav>About me</nav>
-                        <nav>Projects</nav>
-                        <nav>Contacts</nav>
-                    </div>
-                    <div class="header__logo">
-                        <!-- FontAwesomeは後で -->
-                    </div>
-                </div>
-            </div>
+            </header>
+            <main></main>
+            <footer></footer>
         </div>
-    </header>
-    <main></main>
-    <footer></footer>
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__main">
+                <li class="mobile-menu__item">About me</li>
+                <li class="mobile-menu__item">Projects</li>
+                <li class="mobile-menu__item">Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <script src="scripts/functions/mobile-menu.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
