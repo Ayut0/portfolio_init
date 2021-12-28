@@ -48,6 +48,12 @@
     flex-direction: column;
 }
 
+#container{
+    position: relative;
+    z-index: 2;
+    transition: all 0.8s;
+}
+
 .header{
     background-color: $cBgGray;
     width: 100%;
