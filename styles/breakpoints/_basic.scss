@@ -21,7 +21,7 @@
 }
 
 .fs-mobile-intro{
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .fs-sm{
@@ -97,4 +97,35 @@
     }
 
     
+}
+
+.statement{
+    background-color: $cBgColor1;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+
+    &__upper{
+        @extend .content-width;
+        & > span{
+            text-transform: uppercase;
+            font-weight: bold;
+            @extend .fs-mobile-intro;
+        }
+    }
+
+    &__lower{
+        @extend .content-width;
+        margin-top: 10px;
+        & > span{
+            text-transform: uppercase;
+            font-weight: bold;
+            @extend .fs-mobile-intro;
+        }
+    }
+    
+    &__container{
+        
+    }
 }
