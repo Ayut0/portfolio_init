@@ -107,7 +107,7 @@
   font-size: 48px;
 }
 
-.fs-mobile-intro, .mobile-menu__item, .header__left .name, .statement__upper > span, .statement__lower > span {
+.fs-mobile-intro, .mobile-menu__item, .header__left .name, .statement__upper > span, .statement__lower > span, .statement__lower .word {
   font-size: 28px;
 }
 
@@ -221,10 +221,50 @@
 
 .statement__lower {
   margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .statement__lower > span {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.statement__lower .word {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  left: 70px;
+  opacity: 0;
+}
+
+.statement__lower .word .letter {
+  display: inline-block;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+}
+
+.statement__lower .word .letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.statement__lower .word .letter.behind {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+.statement__lower .word .letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform .55s;
+  transition: -webkit-transform .55s;
+  transition: transform .55s;
+  transition: transform .55s, -webkit-transform .55s;
 }
 /*# sourceMappingURL=style.css.map */

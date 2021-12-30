@@ -118,14 +118,46 @@
     &__lower{
         @extend .content-width;
         margin-top: 10px;
+        display: flex;
+        // align-items: center;
+
         & > span{
             text-transform: uppercase;
             font-weight: bold;
             @extend .fs-mobile-intro;
         }
+
+        & .word{
+            text-transform: uppercase;
+            font-weight: bold;
+            @extend .fs-mobile-intro;
+            position: absolute;
+            left: 70px;
+            // vertical-align: top;
+            opacity: 0;
+
+            & .letter{
+                display: inline-block;
+                transform: translateX(25px);
+                transform-origin: 50% 50% 25px;
+            }
+
+            & .letter.out{
+                transform: rotateX(90deg);
+                transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+
+            & .letter.behind{
+                transform: rotateX(-90deg);
+                transition: transform 0.4s;
+            }
+
+            & .letter.in{
+                transform: rotateX(90deg);
+                transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+        }
     }
     
-    &__container{
-        
-    }
+    
 }
