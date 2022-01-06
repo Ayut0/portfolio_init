@@ -1,0 +1,12 @@
+.intro{
+    &__container{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 20px;
+
+    }
+
+    &__main{
+        flex-basis: 500px;
+    }
+}

@@ -1,3 +1,24 @@
 @import "modules/variables";
 @import "modules/mobile-menu";
 @import "breakpoints/basic";
+
+
+@media (min-width: 480px){
+    @import "breakpoints/480pxup";
+}
+@media (min-width: 600px){
+    @import "breakpoints/600pxup";
+}
+@media (min-width: 960px){
+    @import "breakpoints/960pxup";
+}
+@media (min-width: 1280px){
+    @import "breakpoints/1280pxup";
+}
+
+// for Retina display
+@media (min-resolution: 192dpi),
+    (-web-min-device-pixel-ratio: 2){
+
+}
+

@@ -6,16 +6,13 @@
 h2{
     font-family: 'Titillium Web', sans-serif;
     color: $cH2;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 36px;
 }
 
 // Font Size
 .fs-intro{
     font-size: 68px;
-}
-
-.fs-h2{
-    font-size: 60px;
 }
 
 .fs-mobile-h2{
@@ -56,11 +53,21 @@ h2{
     transition: all 0.8s;
 }
 
+main{
+    padding-top: 100px;
+}
+
+// header{
+//     position: fixed;
+// }
+
 .header{
     background-color: $cBgGray;
     width: 100%;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 999;
 
     &__container{
         display: flex;
@@ -203,6 +210,7 @@ h2{
         text-align: center;
     }
 
+
     &__sentence{
         // width: 90%;
         @extend .fs-mobile-p, .ff-p, .content-width;
@@ -212,8 +220,30 @@ h2{
         
         & > span{
             text-align: start;
+            color: $cBgGray;
         }
     }
 
+    &__btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        & > button{
+            border-radius: 30px;
+            border: none;
+            padding: 10px;
+            @extend .fs-p;
+            font-weight: bold;
+            color: $cBgGray;
+            cursor: pointer;
+
+        }
+
+        & > button:hover{
+            background-color: $cBgGray;
+            color: $cWhite;
+        }
+    }
 
 }

@@ -94,15 +94,12 @@
 h2 {
   font-family: 'Titillium Web', sans-serif;
   color: #5ebec4;
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 36px;
 }
 
 .fs-intro {
   font-size: 68px;
-}
-
-.fs-h2 {
-  font-size: 60px;
 }
 
 .fs-mobile-h2 {
@@ -117,7 +114,7 @@ h2 {
   font-size: 24px;
 }
 
-.fs-p {
+.fs-p, .intro__btn > button {
   font-size: 20px;
 }
 
@@ -148,6 +145,10 @@ h2 {
   transition: all 0.8s;
 }
 
+main {
+  padding-top: 100px;
+}
+
 .header {
   background-color: #535353;
   width: 100%;
@@ -157,6 +158,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  z-index: 999;
 }
 
 .header__container {
@@ -340,5 +343,46 @@ h2 {
 
 .intro__sentence > span {
   text-align: start;
+  color: #535353;
+}
+
+.intro__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.intro__btn > button {
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  color: #535353;
+  cursor: pointer;
+}
+
+.intro__btn > button:hover {
+  background-color: #535353;
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  .intro__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 20px;
+  }
+  .intro__main {
+    -ms-flex-preferred-size: 500px;
+        flex-basis: 500px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
