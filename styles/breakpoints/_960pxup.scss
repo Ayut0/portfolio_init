@@ -1,0 +1,15 @@
+.statement{
+    &__container{
+        // margin-bottom: 40px;
+    }
+    &__lower{
+        & > p > span{
+            display: inline-block;
+            margin-left: 30px;
+        }
+    }
+}
+
+.word{
+    margin-left: 20px;
+}

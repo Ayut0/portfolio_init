@@ -1,3 +1,42 @@
+.header{
+    &__ul{
+        display: block;
+    }
+}
+
+.mobile-menu{
+    &__btn{
+        display: none;
+    }
+}
+
+.statement{
+    &__container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    &__upper{
+        display: flex;
+        flex-direction: column;
+
+        & > span{
+            flex-wrap: nowrap;
+            font-size: 48px;
+        }
+    }
+
+    &__lower{
+        width: 40%;
+        & > p > span{
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+    
+}
+
 .intro{
     &__container{
         flex-direction: row;

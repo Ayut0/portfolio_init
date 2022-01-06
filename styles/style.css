@@ -122,7 +122,7 @@ h2 {
   font-size: 12px;
 }
 
-.content-width, .header__container, .statement__upper, .statement__lower, .intro__container, .intro__sentence {
+.content-width, .header__container, .statement__container, .intro__container, .intro__sentence {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -210,7 +210,7 @@ main {
 .statement {
   background-color: #fefff5;
   width: 100%;
-  height: 300px;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,6 +371,42 @@ main {
 }
 
 @media (min-width: 600px) {
+  .header__ul {
+    display: block;
+  }
+  .mobile-menu__btn {
+    display: none;
+  }
+  .statement__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statement__upper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statement__upper > span {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    font-size: 48px;
+  }
+  .statement__lower {
+    width: 40%;
+  }
+  .statement__lower > p > span {
+    display: inline-block;
+    margin-left: 20px;
+  }
   .intro__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -383,6 +419,16 @@ main {
   .intro__main {
     -ms-flex-preferred-size: 500px;
         flex-basis: 500px;
+  }
+}
+
+@media (min-width: 960px) {
+  .statement__lower > p > span {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  .word {
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
