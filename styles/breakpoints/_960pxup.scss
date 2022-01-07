@@ -1,7 +1,11 @@
-.statement{
-    &__container{
-        // margin-bottom: 40px;
+.header{
+    &__nav{
+        
     }
+}
+
+.statement{
+    
     &__lower{
         & > p > span{
             display: inline-block;
