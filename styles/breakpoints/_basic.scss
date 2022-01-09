@@ -248,13 +248,10 @@ main{
 
 .project{
     @extend .content-width , .flex;
-    // flex-direction: row;
     gap: 10px;
     background-color: $cBgColor1;
+    margin-bottom: 40px;
 
-    &__container{
-        // justify-content: center;
-    }
 
     &__inner{
         display: flex;
@@ -278,4 +275,48 @@ main{
     &__exp{
         display: none;
     }
+}
+
+.skill{
+    background-color: $cBgColor2;
+    height: 40vh;
+    &__container{
+        @extend .content-width, .flex;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+    &__icon{
+        & > i{
+            line-height: 53px;
+        }
+    }
+
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    &__list{
+        flex-basis: 33%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        column-gap: 15px;
+        
+
+        & > span{
+            font-weight: bold;
+            @extend .fs-p
+        }
+    }
+    
 }
