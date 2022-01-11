@@ -210,7 +210,6 @@ main{
 
 
     &__sentence{
-        // width: 90%;
         @extend .fs-mobile-p, .ff-p, .content-width;
         display: flex;
         flex-direction: column;
@@ -247,9 +246,10 @@ main{
 
 .project{
     @extend .content-width , .flex;
-    gap: 10px;
+    gap: 30px;
     background-color: $cBgColor1;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    z-index: 200;
 
 
     &__inner{
@@ -342,13 +342,41 @@ main{
         text-align: center;
 
         & > span{
-            // display: inline-block;
             width: 100%;
         }
-
-        &__email{
-            display: flex;
-        }
+    }
+    &__email{
+        width: 58%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
     }
+    
+    &__icon{
+        & > i{
+            vertical-align: middle;
+        }
+    }
+    
+    &__social{
+        width: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    &__icons{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+}
+
+.footer{
+    @extend .fs-mobile-p;
+    color: $cBgGray;
+    background-color: $cBgColor2;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
 }
