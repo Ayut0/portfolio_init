@@ -46,6 +46,7 @@
 }
 
 .intro{
+    height: 50vh;
     &__container{
         flex-direction: row;
         justify-content: space-around;
@@ -55,5 +56,28 @@
 
     &__main{
         flex-basis: 500px;
+    }
+}
+
+
+
+.skill{
+    &__heading{
+        // width: 20%;
+        justify-content: center;
+    }
+
+    &__h2{
+        margin-right: 10px;
+    }
+
+    &__inner{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    
+    &__list{
+        flex-basis: 25%;
+        
     }
 }

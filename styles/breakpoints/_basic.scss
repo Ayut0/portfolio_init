@@ -171,7 +171,7 @@ main{
 .intro{
     background-color: $cBgColor2;
     width: 100%;
-    height: 710px;
+    height: 90vh;
 
     &__container{
         @extend .content-width;
@@ -235,7 +235,6 @@ main{
             font-weight: bold;
             color: $cBgGray;
             cursor: pointer;
-
         }
 
         & > button:hover{
@@ -280,6 +279,7 @@ main{
 .skill{
     background-color: $cBgColor2;
     height: 40vh;
+    padding-top: 20px;
     &__container{
         @extend .content-width, .flex;
         align-items: center;
@@ -302,6 +302,7 @@ main{
     &__inner{
         display: flex;
         flex-wrap: wrap;
+        row-gap: 30px;
         
     }
     &__list{
@@ -319,4 +320,35 @@ main{
         }
     }
     
+}
+
+.contact{
+    background-color: $cBgColor1;
+    padding-top: 20px;
+    
+    &__container{
+        @extend .content-width, .flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    &__sentence{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        color: $cBgGray;
+        @extend .fs-p;
+        text-align: center;
+
+        & > span{
+            // display: inline-block;
+            width: 100%;
+        }
+
+        &__email{
+            display: flex;
+        }
+
+    }
 }
