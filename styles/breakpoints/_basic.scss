@@ -245,14 +245,15 @@ main{
 }
 
 .project{
-    @extend .content-width , .flex;
+    @extend .flex;
     gap: 30px;
     background-color: $cBgColor1;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     z-index: 200;
 
 
     &__inner{
+        @extend .content-width;
         display: flex;
         flex-direction: column;
         row-gap: 10px;
