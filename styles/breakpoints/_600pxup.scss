@@ -81,3 +81,18 @@
         
     }
 }
+
+.contact{
+    font-size: 24px;
+
+    &__email{
+        width: 28%;
+        // justify-content: center;
+    }
+
+    &__icons{
+        & > .sns{
+            font-size: 1.5em;
+        }
+    }
+}

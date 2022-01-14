@@ -47,10 +47,17 @@ h2{
     flex-direction: column;
 }
 
+#global-container{
+    background-color: $cBgGray;
+    
+}
+
 #container{
     position: relative;
     z-index: 2;
     transition: all 0.8s;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
 }
 
 main{
@@ -64,6 +71,7 @@ main{
     align-items: center;
     position: fixed;
     z-index: 999;
+
 
     &__container{
         display: flex;
@@ -84,6 +92,14 @@ main{
         display: none;
     }
 
+    &__li{
+        a{
+            color: $cWhite;
+            text-decoration: none;
+
+        }
+    }
+
     &__left{
         display: flex;
         & .name{
@@ -100,6 +116,10 @@ main{
     }
 
     
+}
+
+.section{
+    scroll-snap-align: start;
 }
 
 .statement{

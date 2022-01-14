@@ -9,7 +9,7 @@ $cMenuClose: $cWhite;
     height: 100%;
     background-color: #535353;
     opacity: 0.8;
-    // background-color: $cWhite;
+    
     
     &__btn{
         background-color: unset;
@@ -43,17 +43,11 @@ $cMenuClose: $cWhite;
         list-style: none;
         display: block;
         transform: translate3d(0, 0, -1000px);
-        // padding: 0, 40px;
-        // @extend .fs-mobile-intro;
         margin-left: 70px;
         font-size: 44px;
-        font-weight: 600;
+        font-weight: bold;
         color: $cWhite;
-        // color: $cBlack;
-
         text-align: center;
-
-        
     }
 
     &__cover{
@@ -72,9 +66,10 @@ $cMenuClose: $cWhite;
     &__icon{
         width: 50%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         color: #fff;
-        margin: 0;
+        margin-left: 120px;
+
     }
 }
 
