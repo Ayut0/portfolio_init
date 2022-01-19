@@ -416,8 +416,13 @@ main {
 .project {
   gap: 30px;
   background-color: #fefff5;
-  padding-bottom: 20px;
+  padding: 20px 0px;
   z-index: 200;
+  height: 100vh;
+}
+
+.project__container {
+  height: 100%;
 }
 
 .project__inner {
@@ -428,7 +433,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 10px;
+  row-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project__heading {
@@ -436,12 +444,81 @@ main {
 }
 
 .project__card {
-  height: 180px;
-  width: 337px;
+  height: 25vh;
+  width: 90%;
   border: 1px solid black;
   border-radius: 10px;
   -webkit-box-shadow: 1px #535353;
           box-shadow: 1px #535353;
+  position: relative;
+}
+
+.project__behind-card {
+  height: 30vh;
+  width: 90%;
+  display: none;
+}
+
+.project__behind-container {
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(83, 83, 83, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 13px;
+}
+
+.project__behind-card.show {
+  display: block;
+}
+
+.project__behind-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.project__behind-lang > span {
+  background-color: #fff;
+  color: #070600;
+  font-weight: bold;
+  border-radius: 10%;
+  padding: .12rem;
+}
+
+.project__behind-tool {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.project__behind-tool > span {
+  background-color: #5ebec4;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10%;
+  padding: .12rem;
 }
 
 .project__exp {

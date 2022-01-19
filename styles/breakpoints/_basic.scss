@@ -268,15 +268,20 @@ main{
     @extend .flex;
     gap: 30px;
     background-color: $cBgColor1;
-    padding-bottom: 20px;
+    padding: 20px 0px;
     z-index: 200;
+    height: 100vh;
 
+    &__container{
+        height: 100%
+    }
 
     &__inner{
         @extend .content-width;
         display: flex;
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 20px;
+        align-items: center;
     }
     
     &__heading{
@@ -284,12 +289,68 @@ main{
     }
     
     &__card{
-        height: 180px;
-        width: 337px;
+        height: 25vh;
+        width: 90%;
         border: 1px solid black;
         border-radius: 10px;
         box-shadow: 1px $cBgGray;
+        position: relative;
+    }
+
+    &__behind-card{
+        height: 30vh;
+        width: 90%;
+        // position: absolute;
+        display: none;
+    }
+    
+
+    &__behind-container{
+        color: $cWhite;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgba($color: #535353, $alpha: .7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        row-gap: 13px;
         
+    }
+
+    &__behind-card.show{
+        display: block;
+    }
+
+    &__behind-lang{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+
+        & > span{
+            // width: 25%;
+            background-color: $cWhite;
+            color: $cBlack;
+            font-weight: bold;
+            border-radius: 10%;
+            padding: .12rem;
+        }
+    }
+
+    &__behind-tool{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+
+        & > span{
+            // width: 25%;
+            background-color: $cH2;
+            color: $cWhite;
+            font-weight: bold;
+            border-radius: 10%;
+            padding: .12rem;
+        }
     }
 
     &__exp{
