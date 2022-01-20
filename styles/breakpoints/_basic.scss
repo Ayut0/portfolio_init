@@ -134,7 +134,6 @@ main{
     }
 
     &__upper{
-    
         & > span{
             text-transform: uppercase;
             font-weight: bold;
@@ -302,6 +301,7 @@ main{
         width: 90%;
         // position: absolute;
         display: none;
+        pointer-events: none;
     }
     
 
@@ -316,7 +316,6 @@ main{
         text-align: center;
         align-items: center;
         row-gap: 13px;
-        
     }
 
     &__behind-card.show{

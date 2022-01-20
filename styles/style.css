@@ -457,6 +457,7 @@ main {
   height: 30vh;
   width: 90%;
   display: none;
+  pointer-events: none;
 }
 
 .project__behind-container {
