@@ -11,6 +11,12 @@
         font-weight: bold;
         margin: 0;
     }
+    
+    &__li:hover{
+        transform: scale(1.5);
+        opacity: 0.8;
+        transition: all 0.3s;
+    }
 }
 
 .mobile-menu{
@@ -46,8 +52,14 @@
     
 }
 
+.statement{
+    padding-bottom: 50px;
+}
+
 .intro{
-    height: 50vh;
+    height: 80vh;
+    padding-top: 80px;
+    // padding-bottom: 100px;
     &__container{
         flex-direction: row;
         justify-content: space-around;
@@ -57,11 +69,32 @@
     &__main{
         flex-basis: 500px;
     }
+
+    &__sentence{
+        font-size: 16px;
+    }
+
+    // &__img{
+    //     & > img
+    //     width: 100%;
+    // }
+}
+
+.project{
+    padding-top: 100px;
+    // padding-bottom: 50px;
+    height: 115vh;
+
+    &__inner{
+        row-gap: 50px;
+    }
 }
 
 
 
 .skill{
+    padding-top: 40px;
+    height: 50vh;
     &__heading{
         justify-content: center;
     }
@@ -77,7 +110,9 @@
     
     &__list{
         flex-basis: 25%;
-        
+        & > .skillIcon{
+            font-size: 4em;
+        }
     }
 }
 
