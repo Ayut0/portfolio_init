@@ -9,8 +9,10 @@ projectCards.forEach(projectCard =>{
         let style = behindCards.currentStyle || document.defaultView.getComputedStyle(behindCards, '');
         if(style.display == "none"){
             behindCards.classList.add("show");
+            behindCards.style.position = "absolute"
         }else{
             behindCards.classList.remove("show");
+            behindCards.style.position = ""
         }
         
     })

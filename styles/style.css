@@ -81,6 +81,10 @@
   margin-left: 120px;
 }
 
+.mobile-menu a {
+  color: #fff;
+}
+
 .menu-open__cover {
   opacity: 1;
   visibility: visible;
@@ -184,7 +188,7 @@ main {
 }
 
 .header {
-  background-color: #535353;
+  background-color: rgba(83, 83, 83, 0.6);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,6 +344,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 30px;
+  padding-top: 30px;
 }
 
 .intro__img {
@@ -458,6 +463,7 @@ main {
   width: 90%;
   display: none;
   pointer-events: none;
+  position: absolute;
 }
 
 .project__behind-container {
@@ -649,6 +655,10 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 15px;
+}
+
+.contact__icons > a {
+  color: #535353;
 }
 
 .footer {

@@ -65,7 +65,8 @@ main{
 }
 
 .header{
-    background-color: $cBgGray;
+    // background-color: $cBgGray;
+    background-color: rgba($color: #535353, $alpha: .6);
     width: 100%;
     display: flex;
     align-items: center;
@@ -96,7 +97,6 @@ main{
         a{
             color: $cWhite;
             text-decoration: none;
-
         }
     }
 
@@ -159,7 +159,6 @@ main{
             @extend .fs-mobile-intro;
             position: absolute;
             left: 70px;
-            // vertical-align: top;
             opacity: 0;
 
             & .letter{
@@ -198,6 +197,7 @@ main{
         justify-content: center;
         flex-direction: column;
         row-gap: 30px;
+        padding-top: 30px;
     }
 
     &__img{
@@ -219,7 +219,6 @@ main{
             height: 230px;
             width: 150px;
             transform: translateX(40px) translateY(14px) rotate(10deg);
-    
         }
     }
 
@@ -299,9 +298,9 @@ main{
     &__behind-card{
         height: 30vh;
         width: 90%;
-        // position: absolute;
         display: none;
         pointer-events: none;
+        position: absolute;
     }
     
 
@@ -450,6 +449,10 @@ main{
         display: flex;
         justify-content: space-between;
         margin-top: 15px;
+
+        & > a{
+            color: $cBgGray;
+        }
     }
 }
 
