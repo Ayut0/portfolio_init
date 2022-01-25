@@ -18,37 +18,28 @@ projectCards.forEach(projectCard =>{
     })
 })
 
-// projectCards.forEach(function(target){
-//     target.addEventListener("click",  function(e){
-//         console.log(e.currentTarget);
-//         let targetCard = e.currentTarget;
-        
-//         targetCard.firstElementChild.classList.add("show");
-//     })
-// })
+window.addEventListener("DOMContentLoaded", ()=>{
+    const scrollTrigger = document.querySelectorAll(".project__container");
 
+    if(scrollTrigger.length){
+        scrollFadeIn(scrollTrigger)
+        // console.log(document.documentElement.scrollTop);
+    }
 
-// function showUp(){
-    
-//     behindCards.forEach(behindCard => {
-//         console.log(this);
-//         behindCard.classList.toggle("show");
-//         this.stopPropagation();
-//     })
-// }
+    function scrollFadeIn(trigger){
+        window.addEventListener("scroll", ()=>{
+            for(let i = 0; i <trigger.length; i++){
+                let position = trigger[i].getBoundingClientRect().top;
+                let scroll = window.pageYOffset || document.documentElement.scrollTop;
+                let offset = position + scroll;
+                windowHeight = window.innerHeight;
 
-// function hide(){
-//     this.classList.toggle("show");
-// }
-
-
-// projectCards.forEach(projectCard =>{
-//     projectCard.addEventListener("mouseover", showUp);
-// });
-
-// behindCards.forEach(behindCard =>{
-//     behindCard.addEventListener("click", hide);
-// })
-
+                if(scroll > offset - windowHeight + 200){
+                    trigger[i].classList.add("is-active");
+                }
+            }
+        })
+    }
+})
 
 
