@@ -114,8 +114,6 @@ main{
             justify-content: center;
         }
     }
-
-    
 }
 
 .section{
@@ -339,6 +337,7 @@ main{
         text-align: center;
         align-items: center;
         row-gap: 13px;
+        height: 84%;
     }
 
     &__behind-card.show{
@@ -378,6 +377,22 @@ main{
     &__exp{
         display: none;
     }
+
+    &__card2,
+    &__card3{
+        position: relative;
+    }
+
+    &__behind-card2{
+        position: absolute;
+        top: 292px
+    }
+    &__behind-card3{
+        position: absolute;
+        top: 522px
+    }
+
+
 }
 
 .skill{

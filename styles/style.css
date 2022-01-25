@@ -515,6 +515,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 13px;
+  height: 84%;
 }
 
 .project__behind-card.show {
@@ -559,6 +560,20 @@ main {
 
 .project__exp {
   display: none;
+}
+
+.project__card2, .project__card3 {
+  position: relative;
+}
+
+.project__behind-card2 {
+  position: absolute;
+  top: 292px;
+}
+
+.project__behind-card3 {
+  position: absolute;
+  top: 522px;
 }
 
 .skill {

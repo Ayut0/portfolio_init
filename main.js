@@ -14,7 +14,6 @@ projectCards.forEach(projectCard =>{
             behindCards.classList.remove("show");
             behindCards.style.position = ""
         }
-        
     })
 })
 
