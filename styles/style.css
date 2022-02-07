@@ -843,4 +843,10 @@ main {
     margin-left: 20px;
   }
 }
+
+@media (min-width: 1280px) {
+  .statement__lower .word {
+    left: 176px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
