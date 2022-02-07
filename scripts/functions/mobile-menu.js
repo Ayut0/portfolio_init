@@ -14,7 +14,7 @@ class MobileMenu{
     _getEventType(){
         return window.ontouchstart ? "touchstart" : "click"
     }
-    
+
     _toggle(){
         this.DOM.container.classList.toggle("menu-open");
     }
@@ -31,7 +31,7 @@ class MobileMenu{
     //          );
     //     });
     // }
-    
+
     _addEvent(){
         this.DOM.btn.addEventListener("click", this._toggle.bind(this));
     }
