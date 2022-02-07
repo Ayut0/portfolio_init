@@ -846,7 +846,19 @@ main {
 
 @media (min-width: 1280px) {
   .statement__lower .word {
-    left: 176px;
+    left: 206px;
+  }
+  .project__behind-card {
+    width: 67%;
+  }
+  .project__behind-card h3 {
+    font-size: 2em;
+  }
+  .project__behind-lang {
+    width: 30%;
+  }
+  .project__behind-tool {
+    width: 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,25 @@
 .statement{
     &__lower{
         .word{
-            left: 176px
+            left: 206px
         }
+    }
+}
+
+.project{
+    &__behind-card{
+        width: 67%;
+
+        h3{
+            font-size: 2em;
+        }
+    }
+
+    &__behind-lang{
+        width: 30%;
+    }
+
+    &__behind-tool{
+        width: 20%;
     }
 }
