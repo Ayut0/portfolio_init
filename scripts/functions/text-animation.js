@@ -53,9 +53,7 @@ function splitLetters(word){
     }
 
     wordArray.push(letters);
-    // console.log(wordArray);
 }
 
 changeWord();
 setInterval(changeWord, 4000);
-

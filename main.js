@@ -22,7 +22,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
     if(scrollTrigger.length){
         scrollFadeIn(scrollTrigger)
-        // console.log(document.documentElement.scrollTop);
     }
 
     function scrollFadeIn(trigger){
