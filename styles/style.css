@@ -13,6 +13,7 @@
   border: none;
   outline: none !important;
   cursor: pointer;
+  will-change: transform;
 }
 
 .mobile-menu__btn > span {
@@ -99,6 +100,10 @@
           transform: translate(-300px, 60px);
   -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.7);
           box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.menu-open .mobile-menu {
+  will-change: transform;
 }
 
 .menu-open .mobile-menu__btn > span:nth-child(1) {

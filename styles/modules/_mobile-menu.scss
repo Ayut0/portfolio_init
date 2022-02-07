@@ -15,6 +15,7 @@ $cMenuClose: $cWhite;
         border: none;
         outline: none !important;
         cursor: pointer;
+        will-change: transform;
 
         & > span{
             background-color: $cMenuClose;
@@ -91,6 +92,7 @@ $cMenuClose: $cWhite;
     }
 
     .mobile-menu{
+        will-change: transform;
         &__btn{
             & > span{
                 &:nth-child(1){
