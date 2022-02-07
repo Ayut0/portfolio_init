@@ -81,6 +81,10 @@
   margin-left: 120px;
 }
 
+.mobile-menu__icon a {
+  text-decoration: none;
+}
+
 .mobile-menu a {
   color: #fff;
 }
@@ -329,7 +333,7 @@ main {
 .intro {
   background-color: #fdf5df;
   width: 100%;
-  height: 90vh;
+  height: 110vh;
 }
 
 .intro__container {
@@ -703,6 +707,7 @@ main {
 
 .contact__icons > a {
   color: #535353;
+  text-decoration: none;
 }
 
 .footer {

@@ -19,19 +19,6 @@ class MobileMenu{
         this.DOM.container.classList.toggle("menu-open");
     }
 
-    // _closeMenu2(){
-    //     this.DOM.container.classList.remove("menu-open")
-    // }
-
-    // _closeMenu(){
-    //     this.DOM.items.forEach(item => {
-    //          item.addEventListener(
-    //            "click",
-    //            _closeMenu2()
-    //          );
-    //     });
-    // }
-
     _addEvent(){
         this.DOM.btn.addEventListener("click", this._toggle.bind(this));
     }

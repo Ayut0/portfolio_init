@@ -20,7 +20,6 @@ function changeWord(){
     for(let i = 0; i < nw.length; i++){
         nw[i].className = "letter behind";
         nw[0].parentElement.style.opacity = 1;
-        // console.log(nw[0].parentElement)
         animateLetterIn(nw, i);
     }
 

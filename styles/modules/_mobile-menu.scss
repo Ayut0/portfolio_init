@@ -9,8 +9,7 @@ $cMenuClose: $cWhite;
     height: 100%;
     background-color: #535353;
     opacity: 0.8;
-    
-    
+
     &__btn{
         background-color: unset;
         border: none;
@@ -69,6 +68,10 @@ $cMenuClose: $cWhite;
         justify-content: space-between;
         color: #fff;
         margin-left: 120px;
+
+        a{
+            text-decoration: none;
+        }
     }
 
     a{
