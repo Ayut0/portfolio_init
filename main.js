@@ -1,22 +1,3 @@
-let projectCards = document.querySelectorAll(".project__card");
-
-let index;
-projectCards.forEach(projectCard =>{
-    projectCard.addEventListener("click", ()=>{
-        index = [].slice.call(projectCards).indexOf(projectCard);
-        let behindCards = document.querySelectorAll(".project__behind-card")[index];
-
-        let style = behindCards.currentStyle || document.defaultView.getComputedStyle(behindCards, '');
-        if(style.display == "none"){
-            behindCards.classList.add("show");
-            behindCards.style.position = "absolute"
-        }else{
-            behindCards.classList.remove("show");
-            behindCards.style.position = ""
-        }
-    })
-})
-
 window.addEventListener("DOMContentLoaded", ()=>{
     const scrollTrigger = document.querySelectorAll(".project__container");
 
@@ -38,6 +19,26 @@ window.addEventListener("DOMContentLoaded", ()=>{
             }
         })
     }
+
+    let projectCards = document.querySelectorAll(".project__card");
+
+    let index;
+    projectCards.forEach(projectCard =>{
+        projectCard.addEventListener("click", ()=>{
+            index = [].slice.call(projectCards).indexOf(projectCard);
+            let behindCards = document.querySelectorAll(".project__behind-card")[index];
+
+            let style = behindCards.currentStyle || document.defaultView.getComputedStyle(behindCards, '');
+            if(style.display == "none"){
+                behindCards.classList.add("show");
+                behindCards.style.position = "absolute"
+            }else{
+                behindCards.classList.remove("show");
+                behindCards.style.position = ""
+            }
+        })
+    })
+
 })
 
 
