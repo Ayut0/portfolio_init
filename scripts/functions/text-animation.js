@@ -23,19 +23,19 @@ function changeWord(){
         animateLetterIn(nw, i);
     }
 
-    currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+    currentWord = (currentWord == wordArray.length - 1) ? 0 : currentWord+1;
 }
 
 function animateLetterOut(cw, i){
     setTimeout(() => {
         cw[i].className = "letter out";
-    }, i*90);
+    }, i * 90);
 }
 
 function animateLetterIn(nw, i){
     setTimeout(() => {
         nw[i].className = "letter in";
-    }, (i*90)+350);
+    }, (i * 90) + 350);
 }
 
 function splitLetters(word){
